@@ -31,3 +31,36 @@
 .box6{
   grid-column: 1/3;
 }
+
+.wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+  grid-auto-rows: minmax(120px, auto);
+}
+
+.nested {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 4px;  
+}
+
+.nested p {
+  background: #d5f599;
+  border: #333 1px solid;
+  padding: 4px;
+}
+
+.nested p:nth-child(odd) {
+  background: #f59999;
+}
+
+.wrapper-2 div {
+  background: #eee;
+  padding: 1em;
+}
+
+.wrapper-2 div:nth-child(odd) {
+  background: #aaa;
+}
